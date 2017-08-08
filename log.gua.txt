@@ -1,0 +1,2260 @@
+22:46:31 load [
+  {
+    "updated_time": 1501877108,
+    "created_time": 1501877108,
+    "task": "ssss",
+    "id": 5
+  },
+  {
+    "updated_time": 1501877109,
+    "created_time": 1501877109,
+    "task": "ssss",
+    "id": 6
+  }
+]
+22:46:31 load [
+  {
+    "author": null,
+    "id": 1,
+    "created_time": 1502053543,
+    "updated_time": 1502053543,
+    "title": "aaaaaaaaaaa",
+    "content": "aaaaaaaaaaaaaaaaa"
+  },
+  {
+    "author": null,
+    "id": 2,
+    "created_time": 1502053867,
+    "updated_time": 1502053867,
+    "title": "gua",
+    "content": "gua"
+  },
+  {
+    "author": null,
+    "id": 3,
+    "created_time": 1502054926,
+    "updated_time": 1502054926,
+    "title": "预习",
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  }
+]
+22:46:38 debug save
+22:46:38 load [
+  {
+    "updated_time": 1501877108,
+    "created_time": 1501877108,
+    "task": "ssss",
+    "id": 5
+  },
+  {
+    "updated_time": 1501877109,
+    "created_time": 1501877109,
+    "task": "ssss",
+    "id": 6
+  }
+]
+22:46:38 models [< Todo
+created_time: (1501877108)
+updated_time: (1501877108)
+task: (ssss)
+id: (5) 
+>
+, < Todo
+created_time: (1501877109)
+updated_time: (1501877109)
+task: (ssss)
+id: (6) 
+>
+]
+22:46:38 id is None
+22:46:38 save data/Todo.txt [
+  {
+    "created_time": 1501877108,
+    "updated_time": 1501877108,
+    "task": "ssss",
+    "id": 5
+  },
+  {
+    "created_time": 1501877109,
+    "updated_time": 1501877109,
+    "task": "ssss",
+    "id": 6
+  },
+  {
+    "created_time": 1502055998,
+    "updated_time": 1502055998,
+    "task": "aaaaaaaaa",
+    "id": 7
+  }
+] [{'created_time': 1501877108, 'updated_time': 1501877108, 'task': 'ssss', 'id': 5}, {'created_time': 1501877109, 'updated_time': 1501877109, 'task': 'ssss', 'id': 6}, {'created_time': 1502055998, 'updated_time': 1502055998, 'task': 'aaaaaaaaa', 'id': 7}]
+22:46:42 kwargs,  {'id': 3} <class 'dict'>
+22:46:42 load [
+  {
+    "author": null,
+    "id": 1,
+    "created_time": 1502053543,
+    "updated_time": 1502053543,
+    "title": "aaaaaaaaaaa",
+    "content": "aaaaaaaaaaaaaaaaa"
+  },
+  {
+    "author": null,
+    "id": 2,
+    "created_time": 1502053867,
+    "updated_time": 1502053867,
+    "title": "gua",
+    "content": "gua"
+  },
+  {
+    "author": null,
+    "id": 3,
+    "created_time": 1502054926,
+    "updated_time": 1502054926,
+    "title": "预习",
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  }
+]
+13:42:22 cookies: {'Pycharm-eae28f8d': '82337056-ae76-48ae-a449-99d58a4340b6'}
+13:42:22 非登录用户
+13:42:30 login, cookies {'Pycharm-eae28f8d': '82337056-ae76-48ae-a449-99d58a4340b6'}
+13:42:30 kwargs,  {'username': 'gua'} <class 'dict'>
+13:42:30 load [
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "gua",
+    "id": 0
+  },
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "guagua",
+    "id": 1
+  }
+]
+13:42:30 kwargs,  {'username': 'gua'} <class 'dict'>
+13:42:30 load [
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "gua",
+    "id": 0
+  },
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "guagua",
+    "id": 1
+  }
+]
+13:42:30 session <SecureCookieSession {'user_id': 0}>
+13:42:30 cookies: {'session': 'eyJ1c2VyX2lkIjowfQ.DGmPRg.m63lTHhyCQCKFKgDRX2M2wj2svI', 'Pycharm-eae28f8d': '82337056-ae76-48ae-a449-99d58a4340b6'}
+13:42:30 cookies: 0
+13:42:30 kwargs,  {'id': 0} <class 'dict'>
+13:42:30 load [
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "gua",
+    "id": 0
+  },
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "guagua",
+    "id": 1
+  }
+]
+13:42:30 cookies: {'session': 'eyJ1c2VyX2lkIjowfQ.DGmPRg.m63lTHhyCQCKFKgDRX2M2wj2svI', 'Pycharm-eae28f8d': '82337056-ae76-48ae-a449-99d58a4340b6'}
+13:42:30 cookies: 0
+13:42:30 kwargs,  {'id': 0} <class 'dict'>
+13:42:30 load [
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "gua",
+    "id": 0
+  },
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "guagua",
+    "id": 1
+  }
+]
+13:42:30 current user < User
+password: (dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b)
+id: (0)
+username: (gua) 
+>
+
+13:52:50 load [
+  {
+    "author": null,
+    "id": 1,
+    "created_time": 1502053543,
+    "updated_time": 1502053543,
+    "title": "aaaaaaaaaaa",
+    "content": "aaaaaaaaaaaaaaaaa"
+  },
+  {
+    "author": null,
+    "id": 2,
+    "created_time": 1502053867,
+    "updated_time": 1502053867,
+    "title": "gua",
+    "content": "gua"
+  },
+  {
+    "author": null,
+    "id": 3,
+    "created_time": 1502054926,
+    "updated_time": 1502054926,
+    "title": "预习",
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  }
+]
+13:52:54 kwargs,  {'id': 1} <class 'dict'>
+13:52:54 load [
+  {
+    "author": null,
+    "id": 1,
+    "created_time": 1502053543,
+    "updated_time": 1502053543,
+    "title": "aaaaaaaaaaa",
+    "content": "aaaaaaaaaaaaaaaaa"
+  },
+  {
+    "author": null,
+    "id": 2,
+    "created_time": 1502053867,
+    "updated_time": 1502053867,
+    "title": "gua",
+    "content": "gua"
+  },
+  {
+    "author": null,
+    "id": 3,
+    "created_time": 1502054926,
+    "updated_time": 1502054926,
+    "title": "预习",
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  }
+]
+13:52:59 kwargs,  {'id': 3} <class 'dict'>
+13:52:59 load [
+  {
+    "author": null,
+    "id": 1,
+    "created_time": 1502053543,
+    "updated_time": 1502053543,
+    "title": "aaaaaaaaaaa",
+    "content": "aaaaaaaaaaaaaaaaa"
+  },
+  {
+    "author": null,
+    "id": 2,
+    "created_time": 1502053867,
+    "updated_time": 1502053867,
+    "title": "gua",
+    "content": "gua"
+  },
+  {
+    "author": null,
+    "id": 3,
+    "created_time": 1502054926,
+    "updated_time": 1502054926,
+    "title": "预习",
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  }
+]
+13:54:32 kwargs,  {'id': 2} <class 'dict'>
+13:54:32 load [
+  {
+    "author": null,
+    "id": 1,
+    "created_time": 1502053543,
+    "updated_time": 1502053543,
+    "title": "aaaaaaaaaaa",
+    "content": "aaaaaaaaaaaaaaaaa"
+  },
+  {
+    "author": null,
+    "id": 2,
+    "created_time": 1502053867,
+    "updated_time": 1502053867,
+    "title": "gua",
+    "content": "gua"
+  },
+  {
+    "author": null,
+    "id": 3,
+    "created_time": 1502054926,
+    "updated_time": 1502054926,
+    "title": "预习",
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  }
+]
+13:54:41 kwargs,  {'id': 2} <class 'dict'>
+13:54:41 load [
+  {
+    "author": null,
+    "id": 1,
+    "created_time": 1502053543,
+    "updated_time": 1502053543,
+    "title": "aaaaaaaaaaa",
+    "content": "aaaaaaaaaaaaaaaaa"
+  },
+  {
+    "author": null,
+    "id": 2,
+    "created_time": 1502053867,
+    "updated_time": 1502053867,
+    "title": "gua",
+    "content": "gua"
+  },
+  {
+    "author": null,
+    "id": 3,
+    "created_time": 1502054926,
+    "updated_time": 1502054926,
+    "title": "预习",
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  }
+]
+13:54:45 kwargs,  {'id': 1} <class 'dict'>
+13:54:45 load [
+  {
+    "author": null,
+    "id": 1,
+    "created_time": 1502053543,
+    "updated_time": 1502053543,
+    "title": "aaaaaaaaaaa",
+    "content": "aaaaaaaaaaaaaaaaa"
+  },
+  {
+    "author": null,
+    "id": 2,
+    "created_time": 1502053867,
+    "updated_time": 1502053867,
+    "title": "gua",
+    "content": "gua"
+  },
+  {
+    "author": null,
+    "id": 3,
+    "created_time": 1502054926,
+    "updated_time": 1502054926,
+    "title": "预习",
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  }
+]
+13:57:25 login, cookies {'Pycharm-eae28f8d': '82337056-ae76-48ae-a449-99d58a4340b6', 'session': 'eyJ1c2VyX2lkIjowfQ.DGmPRg.m63lTHhyCQCKFKgDRX2M2wj2svI'}
+13:57:25 kwargs,  {'username': 'guagua'} <class 'dict'>
+13:57:25 load [
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "gua",
+    "id": 0
+  },
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "guagua",
+    "id": 1
+  }
+]
+13:57:25 kwargs,  {'username': 'guagua'} <class 'dict'>
+13:57:25 load [
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "gua",
+    "id": 0
+  },
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "guagua",
+    "id": 1
+  }
+]
+13:57:25 session <SecureCookieSession {'user_id': 1}>
+13:57:25 cookies: {'Pycharm-eae28f8d': '82337056-ae76-48ae-a449-99d58a4340b6', 'session': 'eyJ1c2VyX2lkIjoxfQ.DGmSxQ.p4ZoO9Gy2av7V68L80k1dfAnVx0'}
+13:57:25 cookies: 1
+13:57:25 kwargs,  {'id': 1} <class 'dict'>
+13:57:25 load [
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "gua",
+    "id": 0
+  },
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "guagua",
+    "id": 1
+  }
+]
+13:57:25 cookies: {'Pycharm-eae28f8d': '82337056-ae76-48ae-a449-99d58a4340b6', 'session': 'eyJ1c2VyX2lkIjoxfQ.DGmSxQ.p4ZoO9Gy2av7V68L80k1dfAnVx0'}
+13:57:25 cookies: 1
+13:57:25 kwargs,  {'id': 1} <class 'dict'>
+13:57:25 load [
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "gua",
+    "id": 0
+  },
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "guagua",
+    "id": 1
+  }
+]
+13:57:25 current user < User
+id: (1)
+username: (guagua)
+password: (dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b) 
+>
+
+13:57:29 load [
+  {
+    "author": null,
+    "id": 1,
+    "created_time": 1502053543,
+    "updated_time": 1502053543,
+    "title": "aaaaaaaaaaa",
+    "content": "aaaaaaaaaaaaaaaaa"
+  },
+  {
+    "author": null,
+    "id": 2,
+    "created_time": 1502053867,
+    "updated_time": 1502053867,
+    "title": "gua",
+    "content": "gua"
+  },
+  {
+    "author": null,
+    "id": 3,
+    "created_time": 1502054926,
+    "updated_time": 1502054926,
+    "title": "预习",
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  }
+]
+13:58:09 debug save
+13:58:09 load [
+  {
+    "author": null,
+    "id": 1,
+    "created_time": 1502053543,
+    "updated_time": 1502053543,
+    "title": "aaaaaaaaaaa",
+    "content": "aaaaaaaaaaaaaaaaa"
+  },
+  {
+    "author": null,
+    "id": 2,
+    "created_time": 1502053867,
+    "updated_time": 1502053867,
+    "title": "gua",
+    "content": "gua"
+  },
+  {
+    "author": null,
+    "id": 3,
+    "created_time": 1502054926,
+    "updated_time": 1502054926,
+    "title": "预习",
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  }
+]
+13:58:09 models [< Blog
+id: (1)
+created_time: (1502053543)
+updated_time: (1502053543)
+content: (aaaaaaaaaaaaaaaaa)
+author: (None)
+title: (aaaaaaaaaaa) 
+>
+, < Blog
+id: (2)
+created_time: (1502053867)
+updated_time: (1502053867)
+content: (gua)
+author: (None)
+title: (gua) 
+>
+, < Blog
+id: (3)
+created_time: (1502054926)
+updated_time: (1502054926)
+content: (今天上课, 主要是
+----------------
+
+1. flask 中设置 cookie 和 session 的方法
+2. 修复注册登录和其他用户相关功能
+3. 用 pure css 美化页面
+4. 用 博客 来讲解如何拆分任务
+
+
+分解博客
+--------
+
+1. 准备 model
+    - 博客 model， Blog
+        - id
+        - title
+        - content
+        - author
+        - created_time
+        - updated_time
+    - 博客 model，Comment
+        - id
+        - username
+        - content
+        - created_time
+        - updated_time
+        - blog_id
+2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）
+    - 有一个主页，可看到所有博客的标题和时间
+        - 主页有链接转到发表博客的页面
+        - 主页可以点博客标题进入博客详细页面
+    - 发表博客页面有一个表单可以发表博客
+    - 博客的详细页面，可以看到如下数据
+        - 标题，作者，内容，时间
+        - 所有评论的列表
+        - 有一个输入框，可以输入评论
+        - 输入之后，页面可以看到最新的评论
+3. 根据文档，写好 CRUD 操作和其他操作
+    - `Blog.all()`
+    - `Blog.new()`
+    - `Blog.find()`
+    - `Comnet.all()`
+    - `Comnet.find_by(blog_id)`
+    - `Comnet.new()`
+4. 写路由函数
+5. 画 HTML 页面
+6. 用 JS 实现相关页面的逻辑
+7. 美化页面)
+author: (None)
+title: (预习) 
+>
+]
+13:58:09 id is None
+13:58:09 save data/Blog.txt [
+  {
+    "id": 1,
+    "created_time": 1502053543,
+    "updated_time": 1502053543,
+    "content": "aaaaaaaaaaaaaaaaa",
+    "author": null,
+    "title": "aaaaaaaaaaa"
+  },
+  {
+    "id": 2,
+    "created_time": 1502053867,
+    "updated_time": 1502053867,
+    "content": "gua",
+    "author": null,
+    "title": "gua"
+  },
+  {
+    "id": 3,
+    "created_time": 1502054926,
+    "updated_time": 1502054926,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面",
+    "author": null,
+    "title": "预习"
+  },
+  {
+    "user_id": null,
+    "id": 4,
+    "created_time": 1502085489,
+    "updated_time": 1502085489,
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "title": "mmmmm"
+  }
+] [{'id': 1, 'created_time': 1502053543, 'updated_time': 1502053543, 'content': 'aaaaaaaaaaaaaaaaa', 'author': None, 'title': 'aaaaaaaaaaa'}, {'id': 2, 'created_time': 1502053867, 'updated_time': 1502053867, 'content': 'gua', 'author': None, 'title': 'gua'}, {'id': 3, 'created_time': 1502054926, 'updated_time': 1502054926, 'content': '今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面', 'author': None, 'title': '预习'}, {'user_id': None, 'id': 4, 'created_time': 1502085489, 'updated_time': 1502085489, 'content': 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb', 'title': 'mmmmm'}]
+13:58:09 load [
+  {
+    "id": 1,
+    "created_time": 1502053543,
+    "updated_time": 1502053543,
+    "content": "aaaaaaaaaaaaaaaaa",
+    "author": null,
+    "title": "aaaaaaaaaaa"
+  },
+  {
+    "id": 2,
+    "created_time": 1502053867,
+    "updated_time": 1502053867,
+    "content": "gua",
+    "author": null,
+    "title": "gua"
+  },
+  {
+    "id": 3,
+    "created_time": 1502054926,
+    "updated_time": 1502054926,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面",
+    "author": null,
+    "title": "预习"
+  },
+  {
+    "user_id": null,
+    "id": 4,
+    "created_time": 1502085489,
+    "updated_time": 1502085489,
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "title": "mmmmm"
+  }
+]
+14:00:15 load [
+  {
+    "id": 1,
+    "created_time": 1502053543,
+    "updated_time": 1502053543,
+    "content": "aaaaaaaaaaaaaaaaa",
+    "author": null,
+    "title": "aaaaaaaaaaa"
+  },
+  {
+    "id": 2,
+    "created_time": 1502053867,
+    "updated_time": 1502053867,
+    "content": "gua",
+    "author": null,
+    "title": "gua"
+  },
+  {
+    "id": 3,
+    "created_time": 1502054926,
+    "updated_time": 1502054926,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面",
+    "author": null,
+    "title": "预习"
+  },
+  {
+    "user_id": null,
+    "id": 4,
+    "created_time": 1502085489,
+    "updated_time": 1502085489,
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "title": "mmmmm"
+  }
+]
+14:00:24 debug save
+14:00:24 load [
+  {
+    "id": 1,
+    "created_time": 1502053543,
+    "updated_time": 1502053543,
+    "content": "aaaaaaaaaaaaaaaaa",
+    "author": null,
+    "title": "aaaaaaaaaaa"
+  },
+  {
+    "id": 2,
+    "created_time": 1502053867,
+    "updated_time": 1502053867,
+    "content": "gua",
+    "author": null,
+    "title": "gua"
+  },
+  {
+    "id": 3,
+    "created_time": 1502054926,
+    "updated_time": 1502054926,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面",
+    "author": null,
+    "title": "预习"
+  },
+  {
+    "user_id": null,
+    "id": 4,
+    "created_time": 1502085489,
+    "updated_time": 1502085489,
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "title": "mmmmm"
+  }
+]
+14:00:24 models [< Blog
+id: (1)
+created_time: (1502053543)
+title: (aaaaaaaaaaa)
+updated_time: (1502053543)
+content: (aaaaaaaaaaaaaaaaa)
+author: (None) 
+>
+, < Blog
+id: (2)
+created_time: (1502053867)
+title: (gua)
+updated_time: (1502053867)
+content: (gua)
+author: (None) 
+>
+, < Blog
+id: (3)
+created_time: (1502054926)
+title: (预习)
+updated_time: (1502054926)
+content: (今天上课, 主要是
+----------------
+
+1. flask 中设置 cookie 和 session 的方法
+2. 修复注册登录和其他用户相关功能
+3. 用 pure css 美化页面
+4. 用 博客 来讲解如何拆分任务
+
+
+分解博客
+--------
+
+1. 准备 model
+    - 博客 model， Blog
+        - id
+        - title
+        - content
+        - author
+        - created_time
+        - updated_time
+    - 博客 model，Comment
+        - id
+        - username
+        - content
+        - created_time
+        - updated_time
+        - blog_id
+2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）
+    - 有一个主页，可看到所有博客的标题和时间
+        - 主页有链接转到发表博客的页面
+        - 主页可以点博客标题进入博客详细页面
+    - 发表博客页面有一个表单可以发表博客
+    - 博客的详细页面，可以看到如下数据
+        - 标题，作者，内容，时间
+        - 所有评论的列表
+        - 有一个输入框，可以输入评论
+        - 输入之后，页面可以看到最新的评论
+3. 根据文档，写好 CRUD 操作和其他操作
+    - `Blog.all()`
+    - `Blog.new()`
+    - `Blog.find()`
+    - `Comnet.all()`
+    - `Comnet.find_by(blog_id)`
+    - `Comnet.new()`
+4. 写路由函数
+5. 画 HTML 页面
+6. 用 JS 实现相关页面的逻辑
+7. 美化页面)
+author: (None) 
+>
+, < Blog
+id: (4)
+created_time: (1502085489)
+user_id: (None)
+title: (mmmmm)
+updated_time: (1502085489)
+content: (bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb) 
+>
+]
+14:00:24 id is None
+14:00:24 save data/Blog.txt [
+  {
+    "id": 1,
+    "created_time": 1502053543,
+    "title": "aaaaaaaaaaa",
+    "updated_time": 1502053543,
+    "content": "aaaaaaaaaaaaaaaaa",
+    "author": null
+  },
+  {
+    "id": 2,
+    "created_time": 1502053867,
+    "title": "gua",
+    "updated_time": 1502053867,
+    "content": "gua",
+    "author": null
+  },
+  {
+    "id": 3,
+    "created_time": 1502054926,
+    "title": "预习",
+    "updated_time": 1502054926,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面",
+    "author": null
+  },
+  {
+    "id": 4,
+    "created_time": 1502085489,
+    "user_id": null,
+    "title": "mmmmm",
+    "updated_time": 1502085489,
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  {
+    "id": 5,
+    "created_time": 1502085624,
+    "title": "dd",
+    "updated_time": 1502085624,
+    "content": "ddd",
+    "author": null
+  }
+] [{'id': 1, 'created_time': 1502053543, 'title': 'aaaaaaaaaaa', 'updated_time': 1502053543, 'content': 'aaaaaaaaaaaaaaaaa', 'author': None}, {'id': 2, 'created_time': 1502053867, 'title': 'gua', 'updated_time': 1502053867, 'content': 'gua', 'author': None}, {'id': 3, 'created_time': 1502054926, 'title': '预习', 'updated_time': 1502054926, 'content': '今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面', 'author': None}, {'id': 4, 'created_time': 1502085489, 'user_id': None, 'title': 'mmmmm', 'updated_time': 1502085489, 'content': 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'}, {'id': 5, 'created_time': 1502085624, 'title': 'dd', 'updated_time': 1502085624, 'content': 'ddd', 'author': None}]
+14:00:25 load [
+  {
+    "id": 1,
+    "created_time": 1502053543,
+    "title": "aaaaaaaaaaa",
+    "updated_time": 1502053543,
+    "content": "aaaaaaaaaaaaaaaaa",
+    "author": null
+  },
+  {
+    "id": 2,
+    "created_time": 1502053867,
+    "title": "gua",
+    "updated_time": 1502053867,
+    "content": "gua",
+    "author": null
+  },
+  {
+    "id": 3,
+    "created_time": 1502054926,
+    "title": "预习",
+    "updated_time": 1502054926,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面",
+    "author": null
+  },
+  {
+    "id": 4,
+    "created_time": 1502085489,
+    "user_id": null,
+    "title": "mmmmm",
+    "updated_time": 1502085489,
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  {
+    "id": 5,
+    "created_time": 1502085624,
+    "title": "dd",
+    "updated_time": 1502085624,
+    "content": "ddd",
+    "author": null
+  }
+]
+14:06:26 load [
+  {
+    "id": 1,
+    "created_time": 1502053543,
+    "title": "aaaaaaaaaaa",
+    "updated_time": 1502053543,
+    "content": "aaaaaaaaaaaaaaaaa",
+    "author": null
+  },
+  {
+    "id": 2,
+    "created_time": 1502053867,
+    "title": "gua",
+    "updated_time": 1502053867,
+    "content": "gua",
+    "author": null
+  },
+  {
+    "id": 3,
+    "created_time": 1502054926,
+    "title": "预习",
+    "updated_time": 1502054926,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面",
+    "author": null
+  },
+  {
+    "id": 4,
+    "created_time": 1502085489,
+    "user_id": null,
+    "title": "mmmmm",
+    "updated_time": 1502085489,
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  {
+    "id": 5,
+    "created_time": 1502085624,
+    "title": "dd",
+    "updated_time": 1502085624,
+    "content": "ddd",
+    "author": null
+  }
+]
+14:19:03 cookies: {'Pycharm-eae28f8d': '82337056-ae76-48ae-a449-99d58a4340b6', 'session': 'eyJ1c2VyX2lkIjoxfQ.DGmSxQ.p4ZoO9Gy2av7V68L80k1dfAnVx0'}
+14:19:03 cookies: 1
+14:19:03 kwargs,  {'id': 1} <class 'dict'>
+14:19:03 load [
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "gua",
+    "id": 0
+  },
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "guagua",
+    "id": 1
+  }
+]
+14:24:40 debug save
+14:24:40 load [
+  {
+    "id": 1,
+    "created_time": 1502053543,
+    "title": "aaaaaaaaaaa",
+    "updated_time": 1502053543,
+    "content": "aaaaaaaaaaaaaaaaa",
+    "author": null
+  },
+  {
+    "id": 2,
+    "created_time": 1502053867,
+    "title": "gua",
+    "updated_time": 1502053867,
+    "content": "gua",
+    "author": null
+  },
+  {
+    "id": 3,
+    "created_time": 1502054926,
+    "title": "预习",
+    "updated_time": 1502054926,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面",
+    "author": null
+  },
+  {
+    "id": 4,
+    "created_time": 1502085489,
+    "user_id": null,
+    "title": "mmmmm",
+    "updated_time": 1502085489,
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  {
+    "id": 5,
+    "created_time": 1502085624,
+    "title": "dd",
+    "updated_time": 1502085624,
+    "content": "ddd",
+    "author": null
+  }
+]
+14:24:40 models [< Blog
+id: (1)
+content: (aaaaaaaaaaaaaaaaa)
+author: (None)
+created_time: (1502053543)
+updated_time: (1502053543)
+title: (aaaaaaaaaaa) 
+>
+, < Blog
+id: (2)
+content: (gua)
+author: (None)
+created_time: (1502053867)
+updated_time: (1502053867)
+title: (gua) 
+>
+, < Blog
+id: (3)
+content: (今天上课, 主要是
+----------------
+
+1. flask 中设置 cookie 和 session 的方法
+2. 修复注册登录和其他用户相关功能
+3. 用 pure css 美化页面
+4. 用 博客 来讲解如何拆分任务
+
+
+分解博客
+--------
+
+1. 准备 model
+    - 博客 model， Blog
+        - id
+        - title
+        - content
+        - author
+        - created_time
+        - updated_time
+    - 博客 model，Comment
+        - id
+        - username
+        - content
+        - created_time
+        - updated_time
+        - blog_id
+2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）
+    - 有一个主页，可看到所有博客的标题和时间
+        - 主页有链接转到发表博客的页面
+        - 主页可以点博客标题进入博客详细页面
+    - 发表博客页面有一个表单可以发表博客
+    - 博客的详细页面，可以看到如下数据
+        - 标题，作者，内容，时间
+        - 所有评论的列表
+        - 有一个输入框，可以输入评论
+        - 输入之后，页面可以看到最新的评论
+3. 根据文档，写好 CRUD 操作和其他操作
+    - `Blog.all()`
+    - `Blog.new()`
+    - `Blog.find()`
+    - `Comnet.all()`
+    - `Comnet.find_by(blog_id)`
+    - `Comnet.new()`
+4. 写路由函数
+5. 画 HTML 页面
+6. 用 JS 实现相关页面的逻辑
+7. 美化页面)
+author: (None)
+created_time: (1502054926)
+updated_time: (1502054926)
+title: (预习) 
+>
+, < Blog
+id: (4)
+content: (bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb)
+user_id: (None)
+created_time: (1502085489)
+updated_time: (1502085489)
+title: (mmmmm) 
+>
+, < Blog
+id: (5)
+content: (ddd)
+author: (None)
+created_time: (1502085624)
+updated_time: (1502085624)
+title: (dd) 
+>
+]
+14:24:40 id is None
+14:24:40 save data/Blog.txt [
+  {
+    "id": 1,
+    "content": "aaaaaaaaaaaaaaaaa",
+    "author": null,
+    "created_time": 1502053543,
+    "updated_time": 1502053543,
+    "title": "aaaaaaaaaaa"
+  },
+  {
+    "id": 2,
+    "content": "gua",
+    "author": null,
+    "created_time": 1502053867,
+    "updated_time": 1502053867,
+    "title": "gua"
+  },
+  {
+    "id": 3,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面",
+    "author": null,
+    "created_time": 1502054926,
+    "updated_time": 1502054926,
+    "title": "预习"
+  },
+  {
+    "id": 4,
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "user_id": null,
+    "created_time": 1502085489,
+    "updated_time": 1502085489,
+    "title": "mmmmm"
+  },
+  {
+    "id": 5,
+    "content": "ddd",
+    "author": null,
+    "created_time": 1502085624,
+    "updated_time": 1502085624,
+    "title": "dd"
+  },
+  {
+    "id": 6,
+    "content": "a",
+    "author": null,
+    "created_time": 1502087080,
+    "updated_time": 1502087080,
+    "title": "a"
+  }
+] [{'id': 1, 'content': 'aaaaaaaaaaaaaaaaa', 'author': None, 'created_time': 1502053543, 'updated_time': 1502053543, 'title': 'aaaaaaaaaaa'}, {'id': 2, 'content': 'gua', 'author': None, 'created_time': 1502053867, 'updated_time': 1502053867, 'title': 'gua'}, {'id': 3, 'content': '今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面', 'author': None, 'created_time': 1502054926, 'updated_time': 1502054926, 'title': '预习'}, {'id': 4, 'content': 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb', 'user_id': None, 'created_time': 1502085489, 'updated_time': 1502085489, 'title': 'mmmmm'}, {'id': 5, 'content': 'ddd', 'author': None, 'created_time': 1502085624, 'updated_time': 1502085624, 'title': 'dd'}, {'id': 6, 'content': 'a', 'author': None, 'created_time': 1502087080, 'updated_time': 1502087080, 'title': 'a'}]
+14:24:40 load [
+  {
+    "id": 1,
+    "content": "aaaaaaaaaaaaaaaaa",
+    "author": null,
+    "created_time": 1502053543,
+    "updated_time": 1502053543,
+    "title": "aaaaaaaaaaa"
+  },
+  {
+    "id": 2,
+    "content": "gua",
+    "author": null,
+    "created_time": 1502053867,
+    "updated_time": 1502053867,
+    "title": "gua"
+  },
+  {
+    "id": 3,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面",
+    "author": null,
+    "created_time": 1502054926,
+    "updated_time": 1502054926,
+    "title": "预习"
+  },
+  {
+    "id": 4,
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "user_id": null,
+    "created_time": 1502085489,
+    "updated_time": 1502085489,
+    "title": "mmmmm"
+  },
+  {
+    "id": 5,
+    "content": "ddd",
+    "author": null,
+    "created_time": 1502085624,
+    "updated_time": 1502085624,
+    "title": "dd"
+  },
+  {
+    "id": 6,
+    "content": "a",
+    "author": null,
+    "created_time": 1502087080,
+    "updated_time": 1502087080,
+    "title": "a"
+  }
+]
+14:24:43 load [
+  {
+    "id": 1,
+    "content": "aaaaaaaaaaaaaaaaa",
+    "author": null,
+    "created_time": 1502053543,
+    "updated_time": 1502053543,
+    "title": "aaaaaaaaaaa"
+  },
+  {
+    "id": 2,
+    "content": "gua",
+    "author": null,
+    "created_time": 1502053867,
+    "updated_time": 1502053867,
+    "title": "gua"
+  },
+  {
+    "id": 3,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面",
+    "author": null,
+    "created_time": 1502054926,
+    "updated_time": 1502054926,
+    "title": "预习"
+  },
+  {
+    "id": 4,
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "user_id": null,
+    "created_time": 1502085489,
+    "updated_time": 1502085489,
+    "title": "mmmmm"
+  },
+  {
+    "id": 5,
+    "content": "ddd",
+    "author": null,
+    "created_time": 1502085624,
+    "updated_time": 1502085624,
+    "title": "dd"
+  },
+  {
+    "id": 6,
+    "content": "a",
+    "author": null,
+    "created_time": 1502087080,
+    "updated_time": 1502087080,
+    "title": "a"
+  }
+]
+14:24:43 save data/Blog.txt [
+  {
+    "id": 2,
+    "content": "gua",
+    "author": null,
+    "created_time": 1502053867,
+    "updated_time": 1502053867,
+    "title": "gua"
+  },
+  {
+    "id": 3,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面",
+    "author": null,
+    "created_time": 1502054926,
+    "updated_time": 1502054926,
+    "title": "预习"
+  },
+  {
+    "id": 4,
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "user_id": null,
+    "created_time": 1502085489,
+    "updated_time": 1502085489,
+    "title": "mmmmm"
+  },
+  {
+    "id": 5,
+    "content": "ddd",
+    "author": null,
+    "created_time": 1502085624,
+    "updated_time": 1502085624,
+    "title": "dd"
+  },
+  {
+    "id": 6,
+    "content": "a",
+    "author": null,
+    "created_time": 1502087080,
+    "updated_time": 1502087080,
+    "title": "a"
+  }
+] [{'id': 2, 'content': 'gua', 'author': None, 'created_time': 1502053867, 'updated_time': 1502053867, 'title': 'gua'}, {'id': 3, 'content': '今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面', 'author': None, 'created_time': 1502054926, 'updated_time': 1502054926, 'title': '预习'}, {'id': 4, 'content': 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb', 'user_id': None, 'created_time': 1502085489, 'updated_time': 1502085489, 'title': 'mmmmm'}, {'id': 5, 'content': 'ddd', 'author': None, 'created_time': 1502085624, 'updated_time': 1502085624, 'title': 'dd'}, {'id': 6, 'content': 'a', 'author': None, 'created_time': 1502087080, 'updated_time': 1502087080, 'title': 'a'}]
+14:24:47 load [
+  {
+    "id": 2,
+    "content": "gua",
+    "author": null,
+    "created_time": 1502053867,
+    "updated_time": 1502053867,
+    "title": "gua"
+  },
+  {
+    "id": 3,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面",
+    "author": null,
+    "created_time": 1502054926,
+    "updated_time": 1502054926,
+    "title": "预习"
+  },
+  {
+    "id": 4,
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "user_id": null,
+    "created_time": 1502085489,
+    "updated_time": 1502085489,
+    "title": "mmmmm"
+  },
+  {
+    "id": 5,
+    "content": "ddd",
+    "author": null,
+    "created_time": 1502085624,
+    "updated_time": 1502085624,
+    "title": "dd"
+  },
+  {
+    "id": 6,
+    "content": "a",
+    "author": null,
+    "created_time": 1502087080,
+    "updated_time": 1502087080,
+    "title": "a"
+  }
+]
+14:24:47 save data/Blog.txt [
+  {
+    "id": 2,
+    "content": "gua",
+    "author": null,
+    "created_time": 1502053867,
+    "updated_time": 1502053867,
+    "title": "gua"
+  },
+  {
+    "id": 3,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面",
+    "author": null,
+    "created_time": 1502054926,
+    "updated_time": 1502054926,
+    "title": "预习"
+  },
+  {
+    "id": 4,
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "user_id": null,
+    "created_time": 1502085489,
+    "updated_time": 1502085489,
+    "title": "mmmmm"
+  },
+  {
+    "id": 5,
+    "content": "ddd",
+    "author": null,
+    "created_time": 1502085624,
+    "updated_time": 1502085624,
+    "title": "dd"
+  }
+] [{'id': 2, 'content': 'gua', 'author': None, 'created_time': 1502053867, 'updated_time': 1502053867, 'title': 'gua'}, {'id': 3, 'content': '今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面', 'author': None, 'created_time': 1502054926, 'updated_time': 1502054926, 'title': '预习'}, {'id': 4, 'content': 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb', 'user_id': None, 'created_time': 1502085489, 'updated_time': 1502085489, 'title': 'mmmmm'}, {'id': 5, 'content': 'ddd', 'author': None, 'created_time': 1502085624, 'updated_time': 1502085624, 'title': 'dd'}]
+14:24:49 load [
+  {
+    "id": 2,
+    "content": "gua",
+    "author": null,
+    "created_time": 1502053867,
+    "updated_time": 1502053867,
+    "title": "gua"
+  },
+  {
+    "id": 3,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面",
+    "author": null,
+    "created_time": 1502054926,
+    "updated_time": 1502054926,
+    "title": "预习"
+  },
+  {
+    "id": 4,
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "user_id": null,
+    "created_time": 1502085489,
+    "updated_time": 1502085489,
+    "title": "mmmmm"
+  },
+  {
+    "id": 5,
+    "content": "ddd",
+    "author": null,
+    "created_time": 1502085624,
+    "updated_time": 1502085624,
+    "title": "dd"
+  }
+]
+14:24:49 save data/Blog.txt [
+  {
+    "id": 2,
+    "content": "gua",
+    "author": null,
+    "created_time": 1502053867,
+    "updated_time": 1502053867,
+    "title": "gua"
+  },
+  {
+    "id": 3,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面",
+    "author": null,
+    "created_time": 1502054926,
+    "updated_time": 1502054926,
+    "title": "预习"
+  },
+  {
+    "id": 4,
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "user_id": null,
+    "created_time": 1502085489,
+    "updated_time": 1502085489,
+    "title": "mmmmm"
+  }
+] [{'id': 2, 'content': 'gua', 'author': None, 'created_time': 1502053867, 'updated_time': 1502053867, 'title': 'gua'}, {'id': 3, 'content': '今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面', 'author': None, 'created_time': 1502054926, 'updated_time': 1502054926, 'title': '预习'}, {'id': 4, 'content': 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb', 'user_id': None, 'created_time': 1502085489, 'updated_time': 1502085489, 'title': 'mmmmm'}]
+14:28:02 load [
+  {
+    "id": 2,
+    "content": "gua",
+    "author": null,
+    "created_time": 1502053867,
+    "updated_time": 1502053867,
+    "title": "gua"
+  },
+  {
+    "id": 3,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面",
+    "author": null,
+    "created_time": 1502054926,
+    "updated_time": 1502054926,
+    "title": "预习"
+  },
+  {
+    "id": 4,
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "user_id": null,
+    "created_time": 1502085489,
+    "updated_time": 1502085489,
+    "title": "mmmmm"
+  }
+]
+14:28:08 cookies: {'session': 'eyJ1c2VyX2lkIjoxfQ.DGmSxQ.p4ZoO9Gy2av7V68L80k1dfAnVx0', 'Pycharm-eae28f8d': '82337056-ae76-48ae-a449-99d58a4340b6'}
+14:28:08 cookies: 1
+14:28:08 kwargs,  {'id': 1} <class 'dict'>
+14:28:08 load [
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "gua",
+    "id": 0
+  },
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "guagua",
+    "id": 1
+  }
+]
+14:28:08 debug save
+14:28:08 load [
+  {
+    "id": 2,
+    "content": "gua",
+    "author": null,
+    "created_time": 1502053867,
+    "updated_time": 1502053867,
+    "title": "gua"
+  },
+  {
+    "id": 3,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面",
+    "author": null,
+    "created_time": 1502054926,
+    "updated_time": 1502054926,
+    "title": "预习"
+  },
+  {
+    "id": 4,
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "user_id": null,
+    "created_time": 1502085489,
+    "updated_time": 1502085489,
+    "title": "mmmmm"
+  }
+]
+14:28:08 models [< Blog
+created_time: (1502053867)
+id: (2)
+updated_time: (1502053867)
+author: (None)
+title: (gua)
+content: (gua) 
+>
+, < Blog
+created_time: (1502054926)
+id: (3)
+updated_time: (1502054926)
+author: (None)
+title: (预习)
+content: (今天上课, 主要是
+----------------
+
+1. flask 中设置 cookie 和 session 的方法
+2. 修复注册登录和其他用户相关功能
+3. 用 pure css 美化页面
+4. 用 博客 来讲解如何拆分任务
+
+
+分解博客
+--------
+
+1. 准备 model
+    - 博客 model， Blog
+        - id
+        - title
+        - content
+        - author
+        - created_time
+        - updated_time
+    - 博客 model，Comment
+        - id
+        - username
+        - content
+        - created_time
+        - updated_time
+        - blog_id
+2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）
+    - 有一个主页，可看到所有博客的标题和时间
+        - 主页有链接转到发表博客的页面
+        - 主页可以点博客标题进入博客详细页面
+    - 发表博客页面有一个表单可以发表博客
+    - 博客的详细页面，可以看到如下数据
+        - 标题，作者，内容，时间
+        - 所有评论的列表
+        - 有一个输入框，可以输入评论
+        - 输入之后，页面可以看到最新的评论
+3. 根据文档，写好 CRUD 操作和其他操作
+    - `Blog.all()`
+    - `Blog.new()`
+    - `Blog.find()`
+    - `Comnet.all()`
+    - `Comnet.find_by(blog_id)`
+    - `Comnet.new()`
+4. 写路由函数
+5. 画 HTML 页面
+6. 用 JS 实现相关页面的逻辑
+7. 美化页面) 
+>
+, < Blog
+created_time: (1502085489)
+id: (4)
+user_id: (None)
+updated_time: (1502085489)
+title: (mmmmm)
+content: (bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb) 
+>
+]
+14:28:08 id is None
+14:28:08 save data/Blog.txt [
+  {
+    "created_time": 1502053867,
+    "id": 2,
+    "updated_time": 1502053867,
+    "author": null,
+    "title": "gua",
+    "content": "gua"
+  },
+  {
+    "created_time": 1502054926,
+    "id": 3,
+    "updated_time": 1502054926,
+    "author": null,
+    "title": "预习",
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  },
+  {
+    "created_time": 1502085489,
+    "id": 4,
+    "user_id": null,
+    "updated_time": 1502085489,
+    "title": "mmmmm",
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  {
+    "created_time": 1502087288,
+    "id": 5,
+    "updated_time": 1502087288,
+    "author": "guagua",
+    "title": "aa",
+    "content": "aaa"
+  }
+] [{'created_time': 1502053867, 'id': 2, 'updated_time': 1502053867, 'author': None, 'title': 'gua', 'content': 'gua'}, {'created_time': 1502054926, 'id': 3, 'updated_time': 1502054926, 'author': None, 'title': '预习', 'content': '今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面'}, {'created_time': 1502085489, 'id': 4, 'user_id': None, 'updated_time': 1502085489, 'title': 'mmmmm', 'content': 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'}, {'created_time': 1502087288, 'id': 5, 'updated_time': 1502087288, 'author': 'guagua', 'title': 'aa', 'content': 'aaa'}]
+14:28:08 load [
+  {
+    "created_time": 1502053867,
+    "id": 2,
+    "updated_time": 1502053867,
+    "author": null,
+    "title": "gua",
+    "content": "gua"
+  },
+  {
+    "created_time": 1502054926,
+    "id": 3,
+    "updated_time": 1502054926,
+    "author": null,
+    "title": "预习",
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  },
+  {
+    "created_time": 1502085489,
+    "id": 4,
+    "user_id": null,
+    "updated_time": 1502085489,
+    "title": "mmmmm",
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  {
+    "created_time": 1502087288,
+    "id": 5,
+    "updated_time": 1502087288,
+    "author": "guagua",
+    "title": "aa",
+    "content": "aaa"
+  }
+]
+14:28:10 kwargs,  {'id': 5} <class 'dict'>
+14:28:10 load [
+  {
+    "created_time": 1502053867,
+    "id": 2,
+    "updated_time": 1502053867,
+    "author": null,
+    "title": "gua",
+    "content": "gua"
+  },
+  {
+    "created_time": 1502054926,
+    "id": 3,
+    "updated_time": 1502054926,
+    "author": null,
+    "title": "预习",
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  },
+  {
+    "created_time": 1502085489,
+    "id": 4,
+    "user_id": null,
+    "updated_time": 1502085489,
+    "title": "mmmmm",
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  {
+    "created_time": 1502087288,
+    "id": 5,
+    "updated_time": 1502087288,
+    "author": "guagua",
+    "title": "aa",
+    "content": "aaa"
+  }
+]
+16:18:03 cookies: {'session': 'eyJ1c2VyX2lkIjoxfQ.DGmSxQ.p4ZoO9Gy2av7V68L80k1dfAnVx0', 'Pycharm-eae28f8d': '82337056-ae76-48ae-a449-99d58a4340b6'}
+16:18:03 cookies: 1
+16:18:03 kwargs,  {'id': 1} <class 'dict'>
+16:18:03 load [
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "gua",
+    "id": 0
+  },
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "guagua",
+    "id": 1
+  }
+]
+16:18:03 cookies: {'session': 'eyJ1c2VyX2lkIjoxfQ.DGmSxQ.p4ZoO9Gy2av7V68L80k1dfAnVx0', 'Pycharm-eae28f8d': '82337056-ae76-48ae-a449-99d58a4340b6'}
+16:18:03 cookies: 1
+16:18:03 kwargs,  {'id': 1} <class 'dict'>
+16:18:03 load [
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "gua",
+    "id": 0
+  },
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "guagua",
+    "id": 1
+  }
+]
+16:18:03 current user < User
+password: (dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b)
+id: (1)
+username: (guagua) 
+>
+
+16:18:06 load [
+  {
+    "created_time": 1502053867,
+    "id": 2,
+    "updated_time": 1502053867,
+    "author": null,
+    "title": "gua",
+    "content": "gua"
+  },
+  {
+    "created_time": 1502054926,
+    "id": 3,
+    "updated_time": 1502054926,
+    "author": null,
+    "title": "预习",
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  },
+  {
+    "created_time": 1502085489,
+    "id": 4,
+    "user_id": null,
+    "updated_time": 1502085489,
+    "title": "mmmmm",
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  {
+    "created_time": 1502087288,
+    "id": 5,
+    "updated_time": 1502087288,
+    "author": "guagua",
+    "title": "aa",
+    "content": "aaa"
+  }
+]
+20:45:43 cookies: {}
+20:45:43 非登录用户
+20:45:50 login, cookies {}
+20:45:50 kwargs,  {'username': 'gua'} <class 'dict'>
+20:45:50 load [
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "gua",
+    "id": 0
+  },
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "guagua",
+    "id": 1
+  }
+]
+20:45:50 kwargs,  {'username': 'gua'} <class 'dict'>
+20:45:50 load [
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "gua",
+    "id": 0
+  },
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "guagua",
+    "id": 1
+  }
+]
+20:45:50 session <SecureCookieSession {'user_id': 0}>
+20:45:51 cookies: {'session': 'eyJ1c2VyX2lkIjowfQ.DGtD_w.ctyxye4Jb4kvuBCi4a8k20Cq95M'}
+20:45:51 cookies: 0
+20:45:51 kwargs,  {'id': 0} <class 'dict'>
+20:45:51 load [
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "gua",
+    "id": 0
+  },
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "guagua",
+    "id": 1
+  }
+]
+20:45:51 cookies: {'session': 'eyJ1c2VyX2lkIjowfQ.DGtD_w.ctyxye4Jb4kvuBCi4a8k20Cq95M'}
+20:45:51 cookies: 0
+20:45:51 kwargs,  {'id': 0} <class 'dict'>
+20:45:51 load [
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "gua",
+    "id": 0
+  },
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "guagua",
+    "id": 1
+  }
+]
+20:45:51 current user < User
+username: (gua)
+id: (0)
+password: (dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b) 
+>
+
+20:45:53 load [
+  {
+    "created_time": 1502053867,
+    "id": 2,
+    "updated_time": 1502053867,
+    "author": null,
+    "title": "gua",
+    "content": "gua"
+  },
+  {
+    "created_time": 1502054926,
+    "id": 3,
+    "updated_time": 1502054926,
+    "author": null,
+    "title": "预习",
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  },
+  {
+    "created_time": 1502085489,
+    "id": 4,
+    "user_id": null,
+    "updated_time": 1502085489,
+    "title": "mmmmm",
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  {
+    "created_time": 1502087288,
+    "id": 5,
+    "updated_time": 1502087288,
+    "author": "guagua",
+    "title": "aa",
+    "content": "aaa"
+  }
+]
+20:46:05 cookies: {'session': 'eyJ1c2VyX2lkIjowfQ.DGtD_w.ctyxye4Jb4kvuBCi4a8k20Cq95M'}
+20:46:05 cookies: 0
+20:46:05 kwargs,  {'id': 0} <class 'dict'>
+20:46:05 load [
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "gua",
+    "id": 0
+  },
+  {
+    "password": "dabe8fbbed00dbf72144618dfa56b6eff40207b290013639faa13ecb09f90c3b",
+    "username": "guagua",
+    "id": 1
+  }
+]
+20:46:05 debug save
+20:46:05 load [
+  {
+    "created_time": 1502053867,
+    "id": 2,
+    "updated_time": 1502053867,
+    "author": null,
+    "title": "gua",
+    "content": "gua"
+  },
+  {
+    "created_time": 1502054926,
+    "id": 3,
+    "updated_time": 1502054926,
+    "author": null,
+    "title": "预习",
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  },
+  {
+    "created_time": 1502085489,
+    "id": 4,
+    "user_id": null,
+    "updated_time": 1502085489,
+    "title": "mmmmm",
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  {
+    "created_time": 1502087288,
+    "id": 5,
+    "updated_time": 1502087288,
+    "author": "guagua",
+    "title": "aa",
+    "content": "aaa"
+  }
+]
+20:46:05 models [< Blog
+created_time: (1502053867)
+title: (gua)
+id: (2)
+author: (None)
+updated_time: (1502053867)
+content: (gua) 
+>
+, < Blog
+created_time: (1502054926)
+title: (预习)
+id: (3)
+author: (None)
+updated_time: (1502054926)
+content: (今天上课, 主要是
+----------------
+
+1. flask 中设置 cookie 和 session 的方法
+2. 修复注册登录和其他用户相关功能
+3. 用 pure css 美化页面
+4. 用 博客 来讲解如何拆分任务
+
+
+分解博客
+--------
+
+1. 准备 model
+    - 博客 model， Blog
+        - id
+        - title
+        - content
+        - author
+        - created_time
+        - updated_time
+    - 博客 model，Comment
+        - id
+        - username
+        - content
+        - created_time
+        - updated_time
+        - blog_id
+2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）
+    - 有一个主页，可看到所有博客的标题和时间
+        - 主页有链接转到发表博客的页面
+        - 主页可以点博客标题进入博客详细页面
+    - 发表博客页面有一个表单可以发表博客
+    - 博客的详细页面，可以看到如下数据
+        - 标题，作者，内容，时间
+        - 所有评论的列表
+        - 有一个输入框，可以输入评论
+        - 输入之后，页面可以看到最新的评论
+3. 根据文档，写好 CRUD 操作和其他操作
+    - `Blog.all()`
+    - `Blog.new()`
+    - `Blog.find()`
+    - `Comnet.all()`
+    - `Comnet.find_by(blog_id)`
+    - `Comnet.new()`
+4. 写路由函数
+5. 画 HTML 页面
+6. 用 JS 实现相关页面的逻辑
+7. 美化页面) 
+>
+, < Blog
+user_id: (None)
+created_time: (1502085489)
+title: (mmmmm)
+id: (4)
+updated_time: (1502085489)
+content: (bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb) 
+>
+, < Blog
+created_time: (1502087288)
+title: (aa)
+id: (5)
+author: (guagua)
+updated_time: (1502087288)
+content: (aaa) 
+>
+]
+20:46:05 id is None
+20:46:05 save data/Blog.txt [
+  {
+    "created_time": 1502053867,
+    "title": "gua",
+    "id": 2,
+    "author": null,
+    "updated_time": 1502053867,
+    "content": "gua"
+  },
+  {
+    "created_time": 1502054926,
+    "title": "预习",
+    "id": 3,
+    "author": null,
+    "updated_time": 1502054926,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  },
+  {
+    "user_id": null,
+    "created_time": 1502085489,
+    "title": "mmmmm",
+    "id": 4,
+    "updated_time": 1502085489,
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  {
+    "created_time": 1502087288,
+    "title": "aa",
+    "id": 5,
+    "author": "guagua",
+    "updated_time": 1502087288,
+    "content": "aaa"
+  },
+  {
+    "created_time": 1502196365,
+    "title": "aa",
+    "id": 6,
+    "author": "gua",
+    "updated_time": 1502196365,
+    "content": "sewq"
+  }
+] [{'created_time': 1502053867, 'title': 'gua', 'id': 2, 'author': None, 'updated_time': 1502053867, 'content': 'gua'}, {'created_time': 1502054926, 'title': '预习', 'id': 3, 'author': None, 'updated_time': 1502054926, 'content': '今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面'}, {'user_id': None, 'created_time': 1502085489, 'title': 'mmmmm', 'id': 4, 'updated_time': 1502085489, 'content': 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'}, {'created_time': 1502087288, 'title': 'aa', 'id': 5, 'author': 'guagua', 'updated_time': 1502087288, 'content': 'aaa'}, {'created_time': 1502196365, 'title': 'aa', 'id': 6, 'author': 'gua', 'updated_time': 1502196365, 'content': 'sewq'}]
+20:46:06 load [
+  {
+    "created_time": 1502053867,
+    "title": "gua",
+    "id": 2,
+    "author": null,
+    "updated_time": 1502053867,
+    "content": "gua"
+  },
+  {
+    "created_time": 1502054926,
+    "title": "预习",
+    "id": 3,
+    "author": null,
+    "updated_time": 1502054926,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  },
+  {
+    "user_id": null,
+    "created_time": 1502085489,
+    "title": "mmmmm",
+    "id": 4,
+    "updated_time": 1502085489,
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  {
+    "created_time": 1502087288,
+    "title": "aa",
+    "id": 5,
+    "author": "guagua",
+    "updated_time": 1502087288,
+    "content": "aaa"
+  },
+  {
+    "created_time": 1502196365,
+    "title": "aa",
+    "id": 6,
+    "author": "gua",
+    "updated_time": 1502196365,
+    "content": "sewq"
+  }
+]
+20:46:10 kwargs,  {'id': 6} <class 'dict'>
+20:46:10 load [
+  {
+    "created_time": 1502053867,
+    "title": "gua",
+    "id": 2,
+    "author": null,
+    "updated_time": 1502053867,
+    "content": "gua"
+  },
+  {
+    "created_time": 1502054926,
+    "title": "预习",
+    "id": 3,
+    "author": null,
+    "updated_time": 1502054926,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  },
+  {
+    "user_id": null,
+    "created_time": 1502085489,
+    "title": "mmmmm",
+    "id": 4,
+    "updated_time": 1502085489,
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  {
+    "created_time": 1502087288,
+    "title": "aa",
+    "id": 5,
+    "author": "guagua",
+    "updated_time": 1502087288,
+    "content": "aaa"
+  },
+  {
+    "created_time": 1502196365,
+    "title": "aa",
+    "id": 6,
+    "author": "gua",
+    "updated_time": 1502196365,
+    "content": "sewq"
+  }
+]
+20:46:16 load [
+  {
+    "created_time": 1502053867,
+    "title": "gua",
+    "id": 2,
+    "author": null,
+    "updated_time": 1502053867,
+    "content": "gua"
+  },
+  {
+    "created_time": 1502054926,
+    "title": "预习",
+    "id": 3,
+    "author": null,
+    "updated_time": 1502054926,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  },
+  {
+    "user_id": null,
+    "created_time": 1502085489,
+    "title": "mmmmm",
+    "id": 4,
+    "updated_time": 1502085489,
+    "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  {
+    "created_time": 1502087288,
+    "title": "aa",
+    "id": 5,
+    "author": "guagua",
+    "updated_time": 1502087288,
+    "content": "aaa"
+  },
+  {
+    "created_time": 1502196365,
+    "title": "aa",
+    "id": 6,
+    "author": "gua",
+    "updated_time": 1502196365,
+    "content": "sewq"
+  }
+]
+20:46:16 save data/Blog.txt [
+  {
+    "created_time": 1502053867,
+    "title": "gua",
+    "id": 2,
+    "author": null,
+    "updated_time": 1502053867,
+    "content": "gua"
+  },
+  {
+    "created_time": 1502054926,
+    "title": "预习",
+    "id": 3,
+    "author": null,
+    "updated_time": 1502054926,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  },
+  {
+    "created_time": 1502087288,
+    "title": "aa",
+    "id": 5,
+    "author": "guagua",
+    "updated_time": 1502087288,
+    "content": "aaa"
+  },
+  {
+    "created_time": 1502196365,
+    "title": "aa",
+    "id": 6,
+    "author": "gua",
+    "updated_time": 1502196365,
+    "content": "sewq"
+  }
+] [{'created_time': 1502053867, 'title': 'gua', 'id': 2, 'author': None, 'updated_time': 1502053867, 'content': 'gua'}, {'created_time': 1502054926, 'title': '预习', 'id': 3, 'author': None, 'updated_time': 1502054926, 'content': '今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面'}, {'created_time': 1502087288, 'title': 'aa', 'id': 5, 'author': 'guagua', 'updated_time': 1502087288, 'content': 'aaa'}, {'created_time': 1502196365, 'title': 'aa', 'id': 6, 'author': 'gua', 'updated_time': 1502196365, 'content': 'sewq'}]
+20:46:17 load [
+  {
+    "created_time": 1502053867,
+    "title": "gua",
+    "id": 2,
+    "author": null,
+    "updated_time": 1502053867,
+    "content": "gua"
+  },
+  {
+    "created_time": 1502054926,
+    "title": "预习",
+    "id": 3,
+    "author": null,
+    "updated_time": 1502054926,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  },
+  {
+    "created_time": 1502087288,
+    "title": "aa",
+    "id": 5,
+    "author": "guagua",
+    "updated_time": 1502087288,
+    "content": "aaa"
+  },
+  {
+    "created_time": 1502196365,
+    "title": "aa",
+    "id": 6,
+    "author": "gua",
+    "updated_time": 1502196365,
+    "content": "sewq"
+  }
+]
+20:46:17 save data/Blog.txt [
+  {
+    "created_time": 1502053867,
+    "title": "gua",
+    "id": 2,
+    "author": null,
+    "updated_time": 1502053867,
+    "content": "gua"
+  },
+  {
+    "created_time": 1502054926,
+    "title": "预习",
+    "id": 3,
+    "author": null,
+    "updated_time": 1502054926,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  },
+  {
+    "created_time": 1502196365,
+    "title": "aa",
+    "id": 6,
+    "author": "gua",
+    "updated_time": 1502196365,
+    "content": "sewq"
+  }
+] [{'created_time': 1502053867, 'title': 'gua', 'id': 2, 'author': None, 'updated_time': 1502053867, 'content': 'gua'}, {'created_time': 1502054926, 'title': '预习', 'id': 3, 'author': None, 'updated_time': 1502054926, 'content': '今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面'}, {'created_time': 1502196365, 'title': 'aa', 'id': 6, 'author': 'gua', 'updated_time': 1502196365, 'content': 'sewq'}]
+20:46:17 load [
+  {
+    "created_time": 1502053867,
+    "title": "gua",
+    "id": 2,
+    "author": null,
+    "updated_time": 1502053867,
+    "content": "gua"
+  },
+  {
+    "created_time": 1502054926,
+    "title": "预习",
+    "id": 3,
+    "author": null,
+    "updated_time": 1502054926,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  },
+  {
+    "created_time": 1502196365,
+    "title": "aa",
+    "id": 6,
+    "author": "gua",
+    "updated_time": 1502196365,
+    "content": "sewq"
+  }
+]
+20:46:17 save data/Blog.txt [
+  {
+    "created_time": 1502053867,
+    "title": "gua",
+    "id": 2,
+    "author": null,
+    "updated_time": 1502053867,
+    "content": "gua"
+  },
+  {
+    "created_time": 1502054926,
+    "title": "预习",
+    "id": 3,
+    "author": null,
+    "updated_time": 1502054926,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  }
+] [{'created_time': 1502053867, 'title': 'gua', 'id': 2, 'author': None, 'updated_time': 1502053867, 'content': 'gua'}, {'created_time': 1502054926, 'title': '预习', 'id': 3, 'author': None, 'updated_time': 1502054926, 'content': '今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面'}]
+20:46:19 kwargs,  {'id': 2} <class 'dict'>
+20:46:19 load [
+  {
+    "created_time": 1502053867,
+    "title": "gua",
+    "id": 2,
+    "author": null,
+    "updated_time": 1502053867,
+    "content": "gua"
+  },
+  {
+    "created_time": 1502054926,
+    "title": "预习",
+    "id": 3,
+    "author": null,
+    "updated_time": 1502054926,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  }
+]
+20:46:23 load [
+  {
+    "created_time": 1502053867,
+    "title": "gua",
+    "id": 2,
+    "author": null,
+    "updated_time": 1502053867,
+    "content": "gua"
+  },
+  {
+    "created_time": 1502054926,
+    "title": "预习",
+    "id": 3,
+    "author": null,
+    "updated_time": 1502054926,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  }
+]
+20:46:25 kwargs,  {'id': 3} <class 'dict'>
+20:46:25 load [
+  {
+    "created_time": 1502053867,
+    "title": "gua",
+    "id": 2,
+    "author": null,
+    "updated_time": 1502053867,
+    "content": "gua"
+  },
+  {
+    "created_time": 1502054926,
+    "title": "预习",
+    "id": 3,
+    "author": null,
+    "updated_time": 1502054926,
+    "content": "今天上课, 主要是\r\n----------------\r\n\r\n1. flask 中设置 cookie 和 session 的方法\r\n2. 修复注册登录和其他用户相关功能\r\n3. 用 pure css 美化页面\r\n4. 用 博客 来讲解如何拆分任务\r\n\r\n\r\n分解博客\r\n--------\r\n\r\n1. 准备 model\r\n    - 博客 model， Blog\r\n        - id\r\n        - title\r\n        - content\r\n        - author\r\n        - created_time\r\n        - updated_time\r\n    - 博客 model，Comment\r\n        - id\r\n        - username\r\n        - content\r\n        - created_time\r\n        - updated_time\r\n        - blog_id\r\n2. 写出操作场景的文档 （你要对这些数据做什么操作，这是最重要的一步）\r\n    - 有一个主页，可看到所有博客的标题和时间\r\n        - 主页有链接转到发表博客的页面\r\n        - 主页可以点博客标题进入博客详细页面\r\n    - 发表博客页面有一个表单可以发表博客\r\n    - 博客的详细页面，可以看到如下数据\r\n        - 标题，作者，内容，时间\r\n        - 所有评论的列表\r\n        - 有一个输入框，可以输入评论\r\n        - 输入之后，页面可以看到最新的评论\r\n3. 根据文档，写好 CRUD 操作和其他操作\r\n    - `Blog.all()`\r\n    - `Blog.new()`\r\n    - `Blog.find()`\r\n    - `Comnet.all()`\r\n    - `Comnet.find_by(blog_id)`\r\n    - `Comnet.new()`\r\n4. 写路由函数\r\n5. 画 HTML 页面\r\n6. 用 JS 实现相关页面的逻辑\r\n7. 美化页面"
+  }
+]

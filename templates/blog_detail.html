@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新建博客</title>
+</head>
+<body>
+        <div class="gua-center-block gua-block">
+            <h1 id="id-blog-title" class="gua-center"></h1>
+            <div id="id-blog-content" class="markdown-body"></div>
+        </div>
+</body>
+    <link href="https://cdn.bootcss.com/pure/1.0.0/pure-min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='markdown.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='gua.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='blog.css') }}" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/marked/0.3.6/marked.min.js"></script>
+    <script src="{{ url_for('static', filename='gua.js') }}"></script>
+    <script src="{{ url_for('static', filename='blog_detail.js') }}"></script>
+
+</html>

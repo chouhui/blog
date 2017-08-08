@@ -1,0 +1,15 @@
+#id-input-content {
+    width: 500px;
+    display: block;
+    height: 700px;
+}
+
+#id-input-title {
+    width: 500px;
+    display: block;
+}
+
+#id-button-add {
+    width: 500px;
+    display: block;
+}
